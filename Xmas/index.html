@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>model-viewer效果測試</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="rwd-content">
+            <div class="rwd-content-left aspect-ratio">
+                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                <model-viewer alt="Littlest Tokyo by glenatron" src="./assets/LittlestTokyo/LittlestTokyo.glb" ios-src="./assets/LittlestTokyo/LittlestTokyo.usdz" ar ar-modes="scene-viewer webxr quick-look" poster="./assets/LittlestTokyo/LittlestTokyo.webp" camera-orbit="45deg 75deg 2m" shadow-intensity="1" camera-controls touch-action="pan-y" autoplay auto-rotate></model-viewer>
+            </div>
+
+            <div class="rwd-content-right aspect-ratio">
+                <div>
+
+                    <div>
+                        <h1>Littlest Tokyo</h1>
+                    </div>
+                    <div class="line1">by glenatron</div>
+                    <div class="line2">
+                        然活故下另政司資經的校中師北始注，西有製。禮天利命總管斯叫研之議獎語及檢分時……個女進圖輕別防，得心主重最而找卻的定，他師趣來值月須。
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="rwd-footer">
+            <div class="copyright">
+                Copyright&nbsp;©&nbsp;
+                <script>
+                    document.write(new Date().getFullYear());
+
+                </script>
+                &nbsp;Yueh-Fang Lin.&nbsp;All rights reserved.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

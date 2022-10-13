@@ -3,6 +3,11 @@
     src: url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Regular.woff) format("woff");
 }
 
+@font-face {
+    font-family: SweiXDPearlCJKtc-Bold;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Bold.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Bold.woff) format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -19,9 +24,12 @@ body {
     color: #244376;
     background-color: #eee5e9;
     padding: 1rem;
+    word-break: keep-all;
 }
 
 h1 {
+    font-family: SweiXDPearlCJKtc-Bold;
+    white-space:nowrap;
     margin: 2rem auto;
     padding: 0;
 }
@@ -54,7 +62,7 @@ h1 {
     line-height: 1.5rem;
     margin: 0.8rem auto;
     padding: 0;
-    text-align: left;
+    text-align: center;
     font-size: 1.2rem;
 }
 
@@ -156,10 +164,7 @@ model-viewer {
     .rwd-footer {
         width: 90%;
     }
-.line2 {
-    
-    font-size: 1.2rem;
-}
+
   
 }
 

@@ -15,7 +15,12 @@
         <div class="rwd-content">
             <div class="rwd-content-left aspect-ratio">
                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                <model-viewer alt="Littlest Tokyo by glenatron" src="./assets/LittlestTokyo/LittlestTokyo.glb" ios-src="./assets/LittlestTokyo/LittlestTokyo.usdz" ar ar-modes="scene-viewer webxr quick-look" poster="./assets/LittlestTokyo/LittlestTokyo.webp" camera-orbit="45deg 75deg 2m" shadow-intensity="1" camera-controls touch-action="pan-y" autoplay auto-rotate></model-viewer>
+                <model-viewer alt="Littlest Tokyo by glenatron" src="./assets/LittlestTokyo/LittlestTokyo.glb" ios-src="./assets/LittlestTokyo/LittlestTokyo.usdz" ar ar-modes="scene-viewer webxr quick-look" poster="./assets/LittlestTokyo/LittlestTokyo.webp" camera-orbit="45deg 75deg 2m" shadow-intensity="1" camera-controls touch-action="pan-y" autoplay auto-rotate>
+
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                </model-viewer>
             </div>
 
             <div class="rwd-content-right aspect-ratio">
@@ -24,11 +29,15 @@
                     <div>
                         <h1>祝福你聖誕快樂~</h1>
                     </div>
-                    
+
                     <div class="line2">
-                        轉眼間今年就要過完了，感謝您對我的照顧，祝您有個平安、幸福的聖誕節!<br>這是我設計的小卡片，可以用AR玩看看喔~ 
+                        轉眼間今年就要過完了，感謝您對我的照顧，祝您有個平安、幸福的聖誕節!<br>這是我設計的小卡片，可以用AR玩看看喔~
                     </div>
-                    <div class="line1"><div class="me-content"><div class="me"></div>Fred 林岳鋒</div></div>
+                    <div class="line1">
+                        <div class="me-content">
+                            <div class="me"></div>Fred 林岳鋒
+                        </div>
+                    </div>
 
                 </div>
             </div>

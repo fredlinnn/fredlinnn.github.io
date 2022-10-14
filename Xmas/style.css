@@ -199,14 +199,15 @@ model-viewer {
     background-size: 20px 20px;
     background-position: 12px 50%;
     background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    bottom: 132px;
+    bottom: 3em;
     padding: 0px 16px 0px 40px;
-    font-family: Roboto Regular, Helvetica Neue, sans-serif;
-    font-size: 14px;
+    font-family: SweiXDPearlCJKtc-Regular;
+    font-size: 0.8em;
     color: #4285f4;
     height: 36px;
     line-height: 36px;

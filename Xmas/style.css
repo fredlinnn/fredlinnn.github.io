@@ -204,14 +204,14 @@ model-viewer {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    bottom: 3em;
+    bottom: 2.5em;
     padding: 0px 12px 0px 40px;
     font-family: SweiXDPearlCJKtc-Regular;
     font-size: 14px;
     color: #4285f4;
     height: 36px;
     line-height: 36px;
-    border-radius: 18px;
+    border-radius: 99em;
     border: 1px solid #DADCE0;
 }
 

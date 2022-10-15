@@ -17,7 +17,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100%vw;
     height: 100vh;
     text-align: center;
     margin: 0 auto;
@@ -26,7 +26,6 @@ body {
     background-color: #eee5e9;
     padding: 1rem;
     word-break: keep-all;
-
     min-width: 350px;
 }
 
@@ -55,30 +54,30 @@ h1 {
 
 .line1 {
     width: 100%;
-    line-height: 1em;
+    line-height: 1rem;
     margin: 0.5rem auto;
     padding: 0;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     color: #222222;
 }
 
 .line2 {
     width: 100%;
-    line-height: 1.2em;
-    margin: 1.5em auto 0.5em;
+    line-height: 1.2rem;
+    margin: 1.5rem auto 0.5rem;
     padding: 0;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: #222222;
 }
 .line3 {
     width: 100%;
-    line-height: 1em;
-    margin: 0.5em auto;
+    line-height: 1rem;
+    margin: 0.5rem auto;
     padding: 0;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 .flexbox {
@@ -104,8 +103,6 @@ h1 {
 }
 
 .rwd-content-left {
-    background-color: transparent;
-
     height: 100%;
     width: 50%;
 }

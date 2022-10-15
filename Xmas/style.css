@@ -22,14 +22,21 @@ body {
     text-align: center;
     margin: 0 auto;
     font-family: SweiXDPearlCJKtc-Bold;
+    "Helvetica",
+    "Arial",
+    "LiHei Pro",
+    "黑體-繁",
+    "微軟正黑體",
+    sans-serif;
     color: #244376;
     background-color: #eee5e9;
     padding: 1rem;
+    line-break: strict;
     min-width: 350px;
 }
 
 h1 {
-    
+
     white-space: nowrap;
     margin: 0.6em auto;
     padding: 0;
@@ -66,16 +73,17 @@ h1 {
     line-height: 1.2rem;
     margin: 1.5rem auto 0.5rem;
     padding: 0;
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
     color: #222222;
 }
+
 .line3 {
     width: 90%;
     line-height: 1rem;
     margin: 0.5rem auto;
     padding: 0;
-    text-align: center;
+    text-align: left;
     font-size: 0.9rem;
 }
 
@@ -90,7 +98,7 @@ h1 {
 .rwd-content {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
     width: 70%;
-    
+
 
 }
 
@@ -98,7 +106,7 @@ h1 {
 .rwd-content-right {
     float: left;
     aspect-ratio: 1/ 1;
-    
+
 }
 
 .rwd-content-left {
@@ -199,6 +207,7 @@ model-viewer {
         width: 100%;
         height: unset;
     }
+
     .rwd-content-left {
         width: 100%;
         height: unset;

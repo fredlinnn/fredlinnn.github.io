@@ -53,7 +53,7 @@ h1 {
 }
 
 .line1 {
-    width: 100%;
+    width: 90%;
     line-height: 1rem;
     margin: 0.5rem auto;
     padding: 0;
@@ -63,7 +63,7 @@ h1 {
 }
 
 .line2 {
-    width: 100%;
+    width: 90%;
     line-height: 1.2rem;
     margin: 1.5rem auto 0.5rem;
     padding: 0;
@@ -72,7 +72,7 @@ h1 {
     color: #222222;
 }
 .line3 {
-    width: 100%;
+    width: 300px;
     line-height: 1rem;
     margin: 0.5rem auto;
     padding: 0;

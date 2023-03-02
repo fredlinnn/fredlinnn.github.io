@@ -1,0 +1,248 @@
+@font-face {
+    font-family: SweiXDPearlCJKtc-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Regular.woff) format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SweiXDPearlCJKtc-Bold;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Bold.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-xd@2.129/WebFont/CJK%20TC/SweiXDPearlCJKtc-Bold.woff) format("woff");
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    font-family: SweiXDPearlCJKtc-Bold;
+    "Helvetica",
+    "Arial",
+    "LiHei Pro",
+    "黑體-繁",
+    "微軟正黑體",
+    sans-serif;
+    color: #244376;
+    background-color: #eee5e9;
+    padding: 1rem;
+    line-break: strict;
+    min-width: 350px;
+}
+
+h1 {
+
+    white-space: nowrap;
+    margin: 0.6em auto;
+    padding: 0;
+}
+
+.me-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.me {
+    width: 40px;
+    height: 40px;
+    margin: 0.8em;
+    border-radius: 99em;
+    background-image: url(./assets/img/me.jpg);
+    background-size: cover;
+}
+
+.line1 {
+    width: 90%;
+    line-height: 1rem;
+    margin: 0.5rem auto;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #222222;
+}
+
+.line2 {
+    width: 90%;
+    line-height: 1.2rem;
+    margin: 1.5rem auto 0.5rem;
+    padding: 0;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #222222;
+}
+
+.line3 {
+    width: 90%;
+    line-height: 1rem;
+    margin: 0.5rem auto;
+    padding: 0;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.flexbox {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rwd-content {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    width: 70%;
+
+
+}
+
+.rwd-content-left,
+.rwd-content-right {
+    float: left;
+    aspect-ratio: 1/ 1;
+
+}
+
+.rwd-content-left {
+    height: 100%;
+    width: 50%;
+}
+
+.rwd-content-right {
+    background-color: #ffffff;
+    width: 50%;
+    padding: 0.2em 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    --poster-color: #ffffff00;
+
+    background: linear-gradient(-45deg,
+            #aac9ce,
+            #c9bbc8,
+            #e5c1cd,
+            #f3dbcf,
+            #aac9ce);
+    background-size: 500% 140%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.attribution {
+    margin: 0;
+}
+
+.rwd-footer {
+    width: 70%;
+    margin: 10px 0;
+    font-family: SweiXDPearlCJKtc-Regular;
+}
+
+.copyright {
+    width: 100%;
+    text-align: right;
+    font-size: 0.6rem;
+    font-style: italic;
+    line-height: 1.5em;
+    color: #999999;
+}
+
+.rwd-content::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .rwd-content {
+        width: 85%;
+    }
+
+    .rwd-footer {
+        width: 85%;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .rwd-content {
+        width: 100%;
+
+    }
+
+    .rwd-footer {
+        width: 100%;
+    }
+
+    .rwd-content-right {
+        aspect-ratio: unset;
+        width: 100%;
+        height: unset;
+    }
+
+    .rwd-content-left {
+        width: 100%;
+        height: unset;
+    }
+
+    body {
+        width: 100%;
+    }
+
+
+}
+
+
+#ar-button {
+    background-image: url(./assets/img/ic_view_in_ar_new_googblue_48dp.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 20px 50%;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 2.5em;
+    padding: 0px 20px 0px 48px;
+    font-family: SweiXDPearlCJKtc-Regular;
+    font-size: 14px;
+    color: #4285f4;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 99em;
+    border: 0px solid #ffffff;
+}
+
+#ar-button:active {
+    background-color: #E8EAED;
+}

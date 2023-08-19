@@ -3,13 +3,18 @@
     "short_name": "",
     "icons": [
         {
-            "src": "https://fredlinnn.github.io/liff_img/favicon/android-chrome-192x192.png",
+            "src": "https://fredlinnn.github.io/liff_img/favicon/android-chrome-192x192.png?v=202308194",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://fredlinnn.github.io/liff_img/favicon/android-chrome-384x384.png",
+            "src": "https://fredlinnn.github.io/liff_img/favicon/android-chrome-384x384.png?v=202308194",
             "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "https://fredlinnn.github.io/liff_img/favicon/android-chrome-512x512.png?v=202308194",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Player API Example</title>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+      .video-container {
+        display: inline-block;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <iframe
+        id="video1"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/uGwitc3WUE0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="video-container">
+      <iframe
+        id="video2"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tJ_jfFW4kLw"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script>
+      let player1, player2;
+
+      function onYouTubeIframeAPIReady() {
+        player1 = new YT.Player("video1", {
+          events: {
+            onStateChange: onPlayerStateChange,
+          },
+        });
+
+        player2 = new YT.Player("video2", {
+          events: {
+            onStateChange: onPlayerStateChange,
+          },
+        });
+      }
+
+      function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.PLAYING) {
+          if (event.target === player1) {
+            player2.pauseVideo();
+          } else if (event.target === player2) {
+            player1.pauseVideo();
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
